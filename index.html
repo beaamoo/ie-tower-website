@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Head Content -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Tower Image</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+  <nav class="navbar">
+    <!-- Navigation Links -->
+    <ul>
+      <li><strong>IE Tower Snapshot</strong></li>
+    </ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:email@example.com">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <header class="description-header">
+      <p>CLICK ON THE TOWERS TO FIND OUT MORE</p>
+    </header>
+    <section class="interactive-tower">
+      <!-- Interactive Tower Content -->
+      <div class="tower-image-container">
+        <img class="tower-image" src="images/ieTower1.png" alt="Madrid Business District">
+        <div class="tower-overlay left-overlay" onclick="updateDescription('left')"></div>
+        <div class="tower-overlay right-overlay" onclick="updateDescription('right')"></div>
+      </div>
+    </section>
+      <div class="description-section">
+        <!-- Description Section -->
+        <div class="text-content">
+          <h3 id="section-heading">IE Tower Snapshot</h3>
+          <p id="section-description">An overview of the 180-meter tall architectural marvel, spanning 35 floors and 50,000 square meters, blending state-of-the-art learning facilities with dynamic communal areas. Experience the essence of modern education and design in every detail.</p>
+          <a id="section-button" href="https://www.ie.edu/es/universidad/acerca-de/estudiar-en-madrid/ie-tower/" target="_blank">Find out more</a>
+        </div>
+        <div class="image-content">
+          <img id="section-image1" src="images/cincoTorres.jpeg" alt="Description of image">
+        </div>
+        <div class="image-content">
+          <img id="section-image2" src="images/studentDrawing.jpeg" alt="Description of second image">
+        </div>
+      </div>
+  </main>
+  <footer class="footer">
+    <!-- Footer Section -->
+    <p>&copy; 2024 IE Tower Snapshot</p>
+  </footer>
+</body>
+</html>
